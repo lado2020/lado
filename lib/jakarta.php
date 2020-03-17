@@ -65,8 +65,8 @@ $nama = nama();
 						echo color("yellow",".");
 						sleep(1);
 					}
-					sleep(3);
-					$boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HEPIAKANG"}');
+					sleep(20);
+					$boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
 					$messageboba10 = fetch_value($boba10,'"message":"','"');
 					if(strpos($boba10, 'You can use this promo now...')){
 						echo "\n".color("green","[+] Message: ".$messageboba10);
@@ -82,7 +82,7 @@ $nama = nama();
 						sleep(1);
 					}
 					sleep(3);
-					$goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HEPIBOXNCO"}');
+					$goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGORIDEPAY"}');
 					$message1 = fetch_value($goride,'"message":"','"');
 					echo "\n".color("green","[+] Message: ".$message1);
 							
@@ -93,7 +93,7 @@ $nama = nama();
 						sleep(1);
 					}
 					sleep(3);
-					$goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"HEPIUPNORMAL"}');
+					$goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOCAR14"}');
 					$message2 = fetch_value($goride1,'"message":"','"');
 					echo "\n".color("green","[+] Message: ".$message2);
 					sleep(3);
