@@ -59,7 +59,7 @@ if ($register == false)
             sleep(3);
             }else{
                 echo "\e[+] ".$claim."\n";
-				    sleep(3);
+				    sleep(20);
                 echo "\e[!] Trying to redeem Voucher : COBAGOFOOD090320A !\n";
                 sleep(3);
                 goto pengen;
